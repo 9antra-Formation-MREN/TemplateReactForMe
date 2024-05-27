@@ -1,0 +1,235 @@
+/* Your existing styles remain unchanged */
+
+.allSearchBar {
+    position: absolute;
+    top: 100px;
+    left: 303px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    gap: 5px;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconSS {
+    align-self: center;
+    color: #252525;
+    width: 15px; /* Adjust icon size */
+    height: 15px; /* Adjust icon size */
+}
+
+.divider {
+    height: 30px;
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 4px;
+}
+
+.search-input, .react-select__control, .date-picker, .price-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+
+.react-select__control {
+    background: transparent;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    cursor: text;
+    width: 150px; /* Fixed width for location */
+}
+
+.date-picker-input .date-picker {
+    width: 150px; /* Fixed width for date picker */
+}
+
+.price-input {
+    position: relative;
+    width: 150px; /* Fixed width for price input */
+}
+
+.price-range-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+    width: 200px; /* Adjust as needed */
+}
+
+.free-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-range {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+
+    .allSearchBar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search-iconSS {
+        display: block;
+        color: white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .small-screen-search {
+        display: none;
+    }
+
+    .small-screen-search.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .small-screen-search-container {
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .small-screen-search-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding-left: 35px; /* Adjust for icon space */
+    }
+
+    .close-search-icon {
+        color: #2c2c2c;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .small-screen-additional-inputs {
+        width: 80%;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        gap: 10px; /* Space between the input fields */
+    }
+
+    .small-screen-input {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .small-screen-icon {
+      
+        color: #666;
+      
+    }
+
+    .small-screen-input input,
+   
+    .small-screen-date-picker,
+    .small-screen-price-input {
+        flex: 1;
+        width: 100%;
+        height: 40px;
+        border:#ffffff;
+    }
+    .small-screen-input .react-select__control{
+    
+      padding-bottom: 50px;
+    }
+
+    .small-screen-date-picker {
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .small-screen-price-input {
+        border: 1px solid #ffffff;
+     
+        border-radius: 5px;
+    }
+
+    .small-screen-price-range-dropdown {
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .small-screen-free-checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+/* Animation for search icon */
+.search-iconSS {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.search-iconSS:hover {
+    transform: scale(1.2);
+    color: #0056b3; /* Change to desired hover color */
+}
+
+/* Hide small-screen search by default */
+.small-screen-search {
+    display: none;
+}
+
+/* Show small-screen search only on small screens */
+@media (max-width: 768px) {
+    .small-screen-search {
+        display: none;
+    }
+    .small-screen-search.show {
+        display: flex;
+    }
+}

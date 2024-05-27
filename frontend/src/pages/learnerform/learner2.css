@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+
+.pagebackgroundlearner{
+  background-color: #D8EEFF;
+  padding: 100px;
+}
+
+
+.button-container1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Wrapper */
+.button-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Button Style */
+.button-wrapper1 .bttn1 {
+  width: 190px;
+  
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.sign-form {
+  background: linear-gradient(210.88deg, #2C599D -14.6%, #5B84C4 69.73%), #D9D9D9;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 50px;
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+  margin: 120px auto;
+}
+
+.sign-form h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  
+} 
+
+.sign-form p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  
+} 
+
+.sign-form img{
+  height: auto;
+  max-width: 60%;
+}
+
+
+
+.sign-form input,
+.sign-form select {
+  background-color: #eee;
+  border: none;
+  margin: 20px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 90%;
+  outline: none;
+  
+}
+
+.move{ display: flex;
+  justify-content: start;
+  
+
+}
+
+
+.sign-form button {
+  background-color: #FB9B50;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 46px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  border: transparent;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.contbutton:hover {
+  background-color: #f98e3c; /* Change the background color on hover */
+  color: #ffffff;
+}
+.previous button{
+  background-color:transparent;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 14px;
+ 
+  border: 1px solid transparent;
+  border-radius: 22px;
+  
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 2px;
+  margin-bottom: 2px;
+
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sign-form {
+    padding: 20px;
+    height: auto; /* Adjust height for smaller screens */
+    margin: 20px auto;
+  }
+
+  .sign-form h1 {
+    font-size: 20px;
+  }
+
+  .sign-form p {
+    font-size: 16px;
+  }
+
+  .button-wrapper1 {
+    display: none; /* Hide the button wrapper on small screens */
+  }
+
+  .sign-form input,
+  .sign-form select {
+    width: 100%;
+  }
+
+  .button-containerform {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-containerform button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-form {
+    padding: 15px;
+    height: auto; /* Adjust height for smaller screens */
+    margin: 20px auto;
+  }
+
+  .sign-form h1 {
+    font-size: 18px;
+  }
+
+  .sign-form p {
+    font-size: 14px;
+  }
+
+  .sign-form input,
+  .sign-form select {
+    width: 100%;
+  }
+
+  .button-containerform {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-containerform button {
+    width: 100%;
+    padding: 10px;
+  }
+}

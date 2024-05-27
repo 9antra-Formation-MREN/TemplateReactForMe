@@ -1,0 +1,213 @@
+.event-detail-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 120px auto 200px;
+}
+
+.event-detail-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.back a img {
+  margin-left:100px;
+  margin-top: 50px;
+  
+ 
+}
+.event-detail-content {
+  padding: 20px;
+}
+
+.event-detail-content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: 'Poppins';
+}
+
+.event-detail-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.event-detail-center-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.event-detail-center p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.event-detail-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  font-family: 'Poppins';
+}
+
+.event-detail-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.event-detail-details p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #000000;
+  margin: 5px 0;
+  font-family: 'Poppins'; 
+  font-weight: 400;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #2C599D;
+}
+
+.event-detail-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-detail-interested, .btn-detail-participate {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-detail-interested {
+  background-color: #fff;
+  color: #FF8A1F;
+  border: 1px solid #FF8A1F;
+  margin-left: auto;
+}
+
+.btn-detail-participate {
+  background-color: #FF8A1F;
+  color: #fff;
+}
+
+.btn-detail-interested:hover {
+  background-color: #FF8A1F;
+  color: #fff;
+}
+
+.btn-detail-participate:hover {
+  border: 1px solid #FF8A1F;
+  color: #FF8A1F;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .event-detail-card {
+    padding: 10px;
+    margin: 20px auto;
+  }
+  
+  .event-detail-content {
+    padding: 10px;
+  }
+  
+  .event-detail-content h2 {
+    font-size: 20px;
+  }
+  
+  .event-detail-details p {
+    font-size: 12px;
+  }
+  
+  .btn-detail-interested, .btn-detail-participate {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+.event-schedule-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+ margin-bottom: 150px;
+}
+
+.event-schedule-title1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.event-schedule-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 30px 0;
+}
+
+.event-schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.event-schedule-time {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.event-schedule-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+}
+
+.event-schedule-arrow {
+  width: 20px;
+  height: 10px;
+}
+
+.event-schedule-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .event-schedule-container {
+    padding: 10px;
+  }
+
+  .event-schedule-title {
+    font-size: 20px;
+  }
+
+  .event-schedule-time, .event-schedule-title {
+    font-size: 14px;
+  }
+
+  .event-schedule-description {
+    font-size: 12px;
+  }
+}

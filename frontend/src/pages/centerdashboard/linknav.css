@@ -1,0 +1,34 @@
+.sidebar-item .sidebar-link {
+    color: #333; /* Default text color */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    display: flex;
+    align-items: center;
+    border-radius: 0px 60px 60px 0px; /* Apply the same border radius */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+  }
+  
+  .sidebar-item .sidebar-link:hover,
+  .sidebar-item .sidebar-link.active {
+    color: #fff !important;
+    background: #FB9B50;
+    box-shadow: 0px 7px 12px 0px rgba(95, 118, 232, 0.21);
+    opacity: 1;
+  }
+  
+  /* Change Feather icon color when sidebar link is hovered or selected */
+  .sidebar-item .sidebar-link:hover .feather-icon,
+  .sidebar-item .sidebar-link.active .feather-icon {
+    stroke: #fff !important; /* Feather icon color */
+  }
+  
+  .logo {
+    width: 75%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo {
+        width: 40%; /* Adjust the width for small screens */
+    }
+}

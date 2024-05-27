@@ -1,0 +1,101 @@
+/* tcform2.css */
+
+/* General Styles */
+.pagebackground {
+  background-color: #FFD8B4;
+  
+}
+
+.center-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+textarea.box, input.box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: #fca979;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.button-container1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-wrapper1 {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bttn1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.bttn1:hover {
+  background-color: #0056b3;
+}
+
+.button-containerform {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.move-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.move-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.move-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+ 
+
+  .button-container1 {
+      flex-direction: column;
+  }
+
+  
+
+  .button-containerform {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+
+.pagebackground{
+  background-color: #FFD8B4;
+
+}
+
+.button-container1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Wrapper */
+.button-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+/* Button Style */
+.button-wrapper1 .bttn {
+  width: 190px;
+  max-height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 60px ;
+  border: none;
+  
+}
+
+.bttn:nth-child(3){
+ background: rgba(255, 255, 255, 0.36);
+} 
+
+
+
+.center-form {
+  background: linear-gradient(210.88deg, #2C599D -14.6%, #5B84C4 69.73%), #D9D9D9;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 50px;
+  width: 100%;
+  margin-right: 200px;
+}
+
+.center-form h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  
+} 
+
+.center-form p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  
+} 
+
+
+
+.center-form input,
+.center-form select {
+  background-color: #eee;
+  border: none;
+  margin: 20px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 90%;
+  outline: none;
+  
+}
+
+
+
+
+
+
+

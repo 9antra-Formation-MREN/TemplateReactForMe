@@ -1,0 +1,33 @@
+.custom-alert {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    background: #FB9B50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 12px 0px rgba(95, 118, 232, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .custom-alert-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-alert-message {
+    margin-right: 10px;
+  }
+  
+  .custom-alert-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
