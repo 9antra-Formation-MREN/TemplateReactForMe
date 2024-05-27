@@ -1,0 +1,523 @@
+
+:root {
+  scroll-behavior: smooth;
+}
+
+
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins';
+}
+
+#main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Page Title
+--------------------------------------------------------------*/
+.pagetitle {
+  margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #012970;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #2C599D;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6776f4;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Override some default Bootstrap stylings
+--------------------------------------------------------------*/
+
+
+
+/* Bordered Tabs */
+
+.custom-nav .nav-item {
+  display: inline-block;
+}
+
+.custom-nav .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+  border-bottom: 2px solid transparent; /* Set initial bottom border to transparent */
+  transition: color 0.3s, border-bottom-color 0.3s; /* Add transition for smooth color and border-bottom-color change */
+}
+
+.custom-nav .nav-link:hover {
+  color: #4154f1; /* Change text color on hover */
+}
+
+.custom-nav .nav-link.active,
+.custom-nav .nav-link:focus {
+  color: #4154f1;
+  border-bottom-color: #4154f1; /* Change bottom border color when active or focused */
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  #main,
+  #footer {
+    margin-left: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Profie Page
+--------------------------------------------------------------*/
+.profile .profile-card img {
+  max-width: 120px;
+}
+
+.profile .profile-card h2 {
+ 
+  font-weight: 500;
+  color: #2c384e;
+  margin: 10px 0 0 0;
+}
+
+.profile .profile-card h3 {
+  font-size: 18px;
+}
+
+.profile .profile-card .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.profile .profile-card .social-links a:hover {
+  color: #012970;
+}
+
+.profile .profile-overview .row {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.profile .profile-overview .card-title {
+  color: #012970;
+}
+
+.profile .profile-overview .label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+
+
+.profile .profile-edit img {
+  max-width: 120px;
+}
+
+.add-course-btn {
+  position: absolute;
+  
+  right: 50px;
+  border-radius: 20px;
+  background-color: #2C599D;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-course-btn:hover {
+  background-color: #1d3f75; 
+  color: #ffffff; 
+}
+
+
+.btn-view-participants,
+.btn-edit,
+.btn-trash {
+  padding: 3px 3px; /* Adjust padding as needed */
+  font-size: 13px; /* Adjust font size as needed */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.btn-view-participants {
+  background-color: #2C599D;
+  color: #fff;
+}
+
+.btn-edit {
+  background-color: #2C599D;
+  color: #fff;
+ 
+  margin-left: 4px;
+}
+
+.btn-trash {
+  background-color: #FB9B50;
+  color: #fff;
+  margin-left: 4px;
+}
+
+
+
+.button-group {
+  display: flex; /* Ensure buttons appear on the same row */
+  gap: 5px; /* Add space between buttons */
+}
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+@keyframes zoomIn {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.05);
+  }
+}
+
+
+
+
+.cardcou {
+    animation: zoomIn 0.5s ease forwards;
+}
+   
+    .cardcou:hover {
+        animation: cardHover 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+
+
+
+
+
+
+    .requests-container {
+      margin-top: 50px;
+  }
+  
+  .request-card {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .action-buttons {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .btn-primary,
+  .btn-orange {
+    color: #fbfbfb;
+    background-color: #1C4D9E;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+      .request-card {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+  
+      .action-buttons {
+          margin-top: 10px;
+      }
+  }
+  
+  
+
+
+
+/* Style for the delete button */
+.btn-delete{
+  background-color: #FB9B50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px; 
+}
+
+.btn-delete:hover {
+  background-color: #FFA867;
+}
+
+
+
+.notification-follower {
+  background-color: #D0F6C7;
+  color: #000000;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.notification-request {
+  background-color: #FFC3C7;
+  color: #000000;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.close-notification {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+.user-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.user-pic {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+
+}
+
+
+.upload-button {
+  position: relative;
+  display: inline-block;
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  border: 4px dashed #ddd;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 100px;
+  background-size: cover; /* Fit the image */
+  margin-left: 80px;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.upload-icon,
+.upload-text {
+  display: block;
+}
+
+.upload-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px; /* Adjust icon size */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.upload-text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: grey;
+  font-size: 14px; /* Adjust text size */
+}
+
+.uploaded-image {
+  display: none; /* Hide the uploaded image by default */
+}
+
+.uploaded-image.show {
+  display: block; /* Show the uploaded image when present */
+}
+.profile-picture-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.profile-picture-label {
+  display: block;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.profile-picture-label:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-btn {
+  margin-top: 10px;
+}
+

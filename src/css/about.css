@@ -1,0 +1,352 @@
+.head-about {
+  position: relative;
+  text-align: center;
+}
+.buttonicon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #FB9B50;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.head-about img {
+  width: 100%;
+  height: auto;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+.about-title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 22px;
+}
+
+.about-title p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+.for-me {
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.for-me h1 {
+  font-family: 'Poppins';
+  color: #2C599D;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.for-me p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #282727;
+  margin-top: 30px;
+}
+
+.learner-section, .training-center-section {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.learner-section img{
+ 
+  height: auto;
+  display: flex;
+  justify-content: start;
+  margin-left: 0px;
+}
+.training-center-section img{ margin-left: 200px;}
+
+.overlay-text-learner, .overlay-text-training {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(8, 6, 6);
+}
+
+.title-learner {
+  text-align: start;
+  font-size: 25px;
+  margin-left: 500px;
+  font-family: 'Poppins';
+  color: #2c599d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.overlay-text-learner p {
+  font-size: 17px;
+  margin-left: 500px;
+  font-family: 'Poppins';
+  line-height: 2;
+  width: 57%;
+  text-align: justify;
+  margin-right: 600px;
+  margin-bottom: 20px;
+}
+
+.btn-learner {
+  background-color: #1C4D9E;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-family: 'Poppins';
+  margin-left: 500px;
+  position: absolute;
+  top: 200px;
+}
+
+.btn-learner:hover {
+  color: #082b64;
+  border-radius: 20px;
+  border: 1px solid #1C4D9E;
+  background-color: transparent;
+}
+
+.overlay-text-training {
+  text-align: start;
+  margin-left: 400px;
+  font-family: 'Poppins';
+  text-align: justify;
+  
+}
+
+.training-center-title {
+  font-size: 26px;
+  color: #FF8A1F;
+  margin-top: 10px;
+ 
+}
+
+.overlay-text-training p {
+  font-size: 17px;
+  font-family: 'Poppins';
+  line-height: 2;
+  width: 45%;
+  text-align: justify;
+}
+
+.btn-training5 {
+  background-color: #FF8A1F;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-family: 'Poppins';
+  position: absolute;
+  top: 340px;
+  left: 400px;
+}
+
+.btn-training5:hover {
+  background-color: transparent;
+  color: #FF8A1F;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid #FF8A1F;
+}
+
+.vision-container {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  text-align: justify;
+  margin-bottom: 150px;
+}
+
+.vision-title {
+  font-size: 30px;
+  color: #2c599d;
+  margin-bottom: 2rem;
+  font-family: 'Poppins';
+  width: 20%;
+}
+
+.vision-text {
+  position: relative;
+  text-align: justify;
+}
+
+.vision-text p {
+  position: absolute;
+  width: 600px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
+.v1 {
+  top: -150px;
+  left: 20px;
+}
+
+.v2 {
+  top: -20px;
+  left: 20px;
+}
+
+.v3 {
+  top: 100px;
+  left: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-title h2 {
+    font-size: 2rem !important;
+  }
+
+  .about-title p {
+    font-size: 1rem !important;
+  }
+
+  .btn {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .head-about img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .content-overlay {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 1rem !important;
+    width: 90% !important;
+  }
+
+  .for-me h1 {
+    font-size: 1rem !important;
+    margin-right:50px;
+  }
+
+  .for-me p {
+    font-size: 0.67rem !important;
+    margin-right:50px;
+  
+  }
+
+  .learner-section img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .training-center-section img {
+    width: 500px !important;
+    height: auto !important;
+    position: relative;
+    right:200px;
+  }
+  .title-learner {
+    font-size: 1rem !important;
+    margin-left: 245px !important;
+    position:relative ;
+    top: 50px;
+  }
+  .training-center-title{
+    font-size: 1rem !important;
+    margin-right: 20px !important;
+    position:relative ;
+    top:2px;
+    right: 350px;
+  }
+
+  .overlay-text-learner p{
+    font-size: 0.65rem !important;
+    margin-left: 250px !important;
+    margin-top: 50px !important;
+    width: 100% !important;
+  }
+  .overlay-text-training p { 
+
+    font-size: 0.65rem !important;
+    position: relative;
+    right: 350px;
+    margin-bottom: 0px !important;
+    width:240px!important;
+  }
+  .btn-learner {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+    margin-left: 240px !important;
+    position: relative !important;
+    top: -15px !important;
+   
+  }
+  .btn-training5 {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.25rem !important;
+    
+    position: absolute !important;
+    top: 145px !important;
+    left: 200px;
+
+  }
+
+  .vision-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: justify;
+    margin-bottom: 150px;
+  }
+  
+  .vision-title {
+    font-size: 20px;
+    color: #2c599d;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+    width: 20%;
+  }
+ 
+  .vision-text p {
+    font-size: 10px;
+  }
+  .about-title h2 {
+    font-size: 20px !important;
+  
+}
+.about-title p {
+  font-size: 10px !important;
+  white-space: pre-line; /* Ensures whitespace and line breaks are respected */
+ 
+}
+
+.about-title p::after {
+  content: ''; /* Text after the line break */
+  display: block;
+}
+
+
+}
+  
+
+

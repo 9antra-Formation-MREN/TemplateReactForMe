@@ -1,0 +1,54 @@
+
+
+/* Apply blue color only on small screens */
+@media (max-width: 768px) {
+    .small-screen-blue {
+        filter: brightness(0) saturate(100%) invert(20%) sepia(91%) saturate(1724%) hue-rotate(187deg) brightness(99%) contrast(100%);
+    }
+}
+
+/* Notifications dropdown */
+.notif-dropdown {
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 200px; /* Adjust width as needed */
+}
+
+.notif-message {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* Dropdown user info */
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-user-image {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 12px;
+    color: #333;
+}
